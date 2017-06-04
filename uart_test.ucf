@@ -1,0 +1,17 @@
+
+NET "clk"       LOC = "P84" | IOSTANDARD = LVCMOS33;
+
+#LEDs
+NET "rx_led<0>" LOC = P78;
+NET "rx_led<1>" LOC = P80;
+NET "rx_led<2>" LOC = P82;
+NET "rx_led<3>" LOC = P85;
+NET "rx_led<4>" LOC = P88;
+NET "rx_led<5>" LOC = P94;
+NET "rx_led<6>" LOC = P98;
+NET "rx_led<7>" LOC = P101;
+
+#UART
+NET "uart_rxd" LOC = P79;
+NET "uart_txd" LOC = P81;
+NET "reset" LOC = P83;

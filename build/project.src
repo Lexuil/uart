@@ -1,0 +1,2 @@
+verilog work ../uart_test.v
+verilog work ../uart.v
