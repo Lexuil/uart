@@ -16,6 +16,7 @@ module uart #(
 	output reg         rx_avail,
 	output reg         rx_error,
 	input              rx_ack,
+	output reg         rx_busy,
 	input      [7:0]   tx_data,
 	input              tx_wr,
 	output reg         tx_busy
@@ -58,7 +59,6 @@ end
 //-----------------------------------------------------------------
 // UART RX Logic
 //-----------------------------------------------------------------
-reg       rx_busy;
 reg [3:0] rx_count16;
 reg [3:0] rx_bitcount;
 reg [7:0] rxd_reg;
