@@ -4,7 +4,7 @@ DEVICE          = xc6slx4-2tqg144
 BGFLAGS         =  -g TdoPin:PULLNONE -g DonePin:PULLUP \
                    -g CRC:enable -g StartUpClk:CCLK
 
-XILINXCADROOT   = /opt/Xilinx/14.7/ISE_DS/ISE
+XILINXCADROOT   = /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/ise
 SIM_CMD         = vsim 
 SIM_COMP_SCRIPT = simulation/$(DESIGN)_TB.do
 SIMGEN_OPTIONS  = -p $(FPGA_ARCH) -lang $(LANGUAGE)
