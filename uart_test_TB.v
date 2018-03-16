@@ -20,9 +20,20 @@ initial begin
 	
 end
 	
-always #1 clk <= ~clk; 
+always #1 clk <= ~clk;
 
-always #864 rdx <= ~rdx;
+reg [4:0] cont1 = 0; 
+
+always begin
+	#864;
+	//if(cont1 <= 47) begin
+	//	rdx <= ~rdx;
+	//	cont1 <= cont1 + 1;
+	//end
+
+	rdx <= ~rdx;
+end
+	 
 
 initial begin//: TEST_CASE
   $dumpfile("uart_test_TB.vcd");
